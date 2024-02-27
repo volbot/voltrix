@@ -1,0 +1,61 @@
+Full name: voltrix
+Short name: voltrix
+Author: allomyrina volbot <volbot333@gmail.com>
+
+Variant: gui 256
+Background: dark
+
+;;base
+;normal
+Color: s_black      #090609 ~ 0
+Color: s_red        #da4e7d ~ 1
+Color: s_green      #8bd225 ~ 2
+Color: s_yellow     #f4d661 ~ 3
+Color: s_blue       #76a3e4 ~ 4
+Color: s_magenta    #c37ffc ~ 5
+Color: s_cyan       #6cb6ab ~ 6
+Color: s_white      #e5deee ~ 7
+;bright
+Color: b_black      #6b6b6b ~ 8
+Color: b_red        #f5a9b8 ~ 9
+Color: b_green      #bfd86d ~ 10
+Color: b_yellow     #f5e498 ~ 11
+Color: b_blue       #87c3ff ~ 12
+Color: b_magenta    #cc9bfc ~ 13
+Color: b_cyan       #acd4cd ~ 14
+Color: b_white      #fdfcfd ~ 15
+;;xtra
+Color: hl_green     #009845 ~
+Color: hl_purple    #662a90 ~
+
+Term colors: s_black s_red s_green s_yellow s_blue s_magenta s_cyan s_white
+Term colors: b_black b_red b_green b_yellow b_blue b_magenta b_cyan b_white
+
+Normal      b_white none
+Terminal    b_white none
+
+;;standard tokens
+Comment     s_cyan      none
+Constant    b_magenta   none
+Statement   s_yellow    none     bold
+PreProc     s_blue      none 
+Type        b_green     none     bold 
+Special     s_green     none     bold
+Identifier  s_red       none     bold
+Error       s_red       none     reverse
+
+;;vim-specific
+Visual  b_white hl_purple
+
+ToolbarLine     b_white hl_green
+ToolbarButton   b_white hl_purple   bold
+
+;;various cursor masks
+Cursor          b_white hl_green
+lCursor         b_white hl_green
+CursorColumn    b_white hl_green
+FoldColumn      b_white hl_green
+SignColumn      b_white hl_green
+
+;;vim-sensible
+StatusLine      b_white hl_purple   bold
