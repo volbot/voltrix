@@ -1,0 +1,132 @@
+; vim: ft=colortemplate fdm=marker cc=22,42,60 et ts=2 sw=2
+
+; Information {{{
+Full name: voltrix
+Short name: voltrix
+Author: allomyrina volbot <volbot.tech@gmail.com>
+Description: a sweet, maximalist colorscheme for Vim
+; }}}
+
+; voltrix Color palette {{{
+; Color name         GUI                 Base256           Base16
+Color: black         #090609             ~                 Black
+Color: hotpink       #de4779             ~                 Red
+Color: lime          #9cdd3c             ~                 Green
+Color: goldenrod     #ddc43c             ~                 Yellow
+Color: cornflower    #3c74dd             ~                 Blue
+Color: purple        #a73cdd             ~                 Magenta
+Color: aquamarine    #3cddd7             ~                 Cyan
+Color: lightgray     #d9d9d9             ~                 LightGray
+
+Color: darkgray      #8c8c8c             ~                 DarkGray
+Color: pink          #e87da1             ~                 LightRed
+Color: lightlime     #bde87d             ~                 LightGreen
+Color: yellow        #e8d87d             ~                 LightYellow
+Color: skyblue       #7da3e8             ~                 LightBlue
+Color: plum          #c47de8             ~                 LightMagenta
+Color: turquoise     #7de8e4             ~                 LightCyan
+Color: white         #fcfcfc             ~                 White
+
+Color: truegreen     #009845             ~                 Green
+Color: royalpurple   #68228B             ~                 Magenta
+Color: truered       #ff0000             ~                 Red
+
+; }}}
+
+; voltrix Terminal colors {{{
+; Define terminal colors (for immersion)
+Term colors: black    hotpink   lime        goldenrod   cornflower  purple  aquamarine  lightgray
+Term colors: darkgray pink      lightlime   yellow      skyblue     plum    turquoise   white
+
+; }}}
+
+; voltrix Linked groups {{{
+Boolean           -> Constant
+Character         -> Constant
+Conditional       -> Statement
+CursorLineFold    -> FoldColumn
+Search            -> Search
+Debug             -> Special
+Define            -> PreProc
+Delimiter         -> Special
+EndOfBuffer       -> NonText
+Exception         -> Statement
+Float             -> Number
+Function          -> Identifier
+Include           -> PreProc
+Keyword           -> Statement
+Label             -> Statement
+Macro             -> PreProc
+MessageWindow     -> WarningMsg
+Number            -> Constant
+Operator          -> Statement
+PmenuKind         -> Pmenu
+PmenuKindSel      -> PmenuSel
+PmenuExtra        -> Pmenu
+PmenuExtraSel     -> PmenuSel
+PopupNotification -> WarningMsg
+PopupSelected     -> PmenuSel
+PreCondit         -> PreProc
+QuickFixLine      -> Search
+Repeat            -> Statement
+SpecialChar       -> Special
+SpecialComment    -> Special
+StorageClass      -> Type
+String            -> Constant
+Structure         -> Type
+Tag               -> Special
+Typedef           -> Type
+; }}}
+
+; voltrix Highlight groups {{{
+Background: dark
+
+Variant: 256 8
+
+Normal               white               none
+Terminal             white               black
+CursorLine           omit                black
+StatusLineTerm       white               royalpurple       bold
+StatusLineNC         darkgray            royalpurple       bold
+
+Variant: gui
+
+Normal               white               black
+Terminal             white               black
+CursorLine           omit                black
+StatusLineTerm       white               royalpurple       bold
+StatusLineTermNC     darkgray            royalpurple       bold
+
+Variant: gui 256 8
+
+; Group              Foreground          Background        Attributes
+ColorColumn          omit                black
+Cursor               fg                  truegreen
+CursorColumn         omit                black
+CursorLineNr         omit                black             bold
+FoldColumn           none                black
+Folded               white               royalpurple
+IncSearch            white               royalpurple
+LineNr               goldenrod           none              bold
+Search               white               truegreen
+StatusLine           white               royalpurple       bold
+StatusLineNC         darkgray            royalpurple       bold
+Visual               fg                  royalpurple
+
+Comment              aquamarine          none
+Constant             plum                none
+Error                lightgray           truered
+Identifier           hotpink             none              t=bold
+Ignore               black               none
+PreProc              cornflower          none
+Special              lime                none
+Statement            goldenrod           none              g=bold
+Type                 lightlime           none              g=bold
+Underlined           skyblue             none              underline
+
+lCursor              -> Cursor
+
+ToolbarLine          white               black
+ToolbarButton        white               royalpurple       bold
+
+; }}}
