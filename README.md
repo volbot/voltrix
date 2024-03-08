@@ -11,8 +11,7 @@
 _do that thing from resume-builder's header where it has text justified on both sides with space in the middle_
 
 ## documentation
-&emsp; voltrix is disgustingly standardized, and will continue to become even more so, until you could, proverbially, describe it to a blind person.
-&emsp; The standards are outlined in the [corresponding folder]().
+&emsp; voltrix is disgustingly standardized, and will continue to become even more so, until you could, proverbially, describe it to a blind person. The standards are outlined in the [corresponding folder]().
 
 This means that you can:
  - read the standards, to see if you like what voltrix has to offer!
