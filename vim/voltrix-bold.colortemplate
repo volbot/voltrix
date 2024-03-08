@@ -1,8 +1,8 @@
 ; vim: ft=colortemplate fdm=marker cc=22,42,60 et ts=2 sw=2
 
 ; Information {{{
-Full name: voltrix
-Short name: voltrix
+Full name: voltrix-bold
+Short name: voltrix-bold
 Author: allomyrina volbot <volbot.tech@gmail.com>
 Description: a sweet, maximalist colorscheme for Vim
 ; }}}
@@ -10,22 +10,22 @@ Description: a sweet, maximalist colorscheme for Vim
 ; voltrix Color palette {{{
 ; Color name         GUI                 Base256           Base16
 Color: black         #090609             ~                 Black
-Color: hotpink       #de4779             ~                 Red
-Color: lime          #9cdd3c             ~                 Green
-Color: goldenrod     #ddc43c             ~                 Yellow
-Color: cornflower    #3c74dd             ~                 Blue
-Color: purple        #a73cdd             ~                 Magenta
-Color: aquamarine    #3cddd7             ~                 Cyan
-Color: lightgray     #d9d9d9             ~                 LightGray
+Color: hotpink       #DA4E7D             ~                 Red
+Color: lime          #9ACD32             ~                 Green
+Color: goldenrod     #FFD700             ~                 Yellow
+Color: cornflower    #6495ED             ~                 Blue
+Color: purple        #C37FFC             ~                 Magenta
+Color: aquamarine    #66CDAA             ~                 Cyan
+Color: lightgray     #E5E5E5             ~                 LightGray
 
-Color: darkgray      #8c8c8c             ~                 DarkGray
-Color: pink          #e87da1             ~                 LightRed
-Color: lightlime     #bde87d             ~                 LightGreen
-Color: yellow        #e8d87d             ~                 LightYellow
-Color: skyblue       #7da3e8             ~                 LightBlue
-Color: plum          #c47de8             ~                 LightMagenta
-Color: turquoise     #7de8e4             ~                 LightCyan
-Color: white         #fcfcfc             ~                 White
+Color: darkgray      #6B6B6B             ~                 DarkGray
+Color: pink          #F5A9B8             ~                 LightRed
+Color: lightlime     #B3F075             ~                 LightGreen
+Color: yellow        #FFEC8B             ~                 LightYellow
+Color: skyblue       #87CEEB             ~                 LightBlue
+Color: plum          #DDA0DD             ~                 LightMagenta
+Color: turquoise     #AFEEEE             ~                 LightCyan
+Color: white         #FCFCFC             ~                 White
 
 Color: truegreen     #009845             ~                 Green
 Color: royalpurple   #68228B             ~                 Magenta
