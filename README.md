@@ -12,8 +12,9 @@ _do that thing from resume-builder's header where it has text justified on both 
 
 ## documentation
 &emsp; voltrix is disgustingly standardized, and will continue to become even more so, until you could, proverbially, describe it to a blind person.
+&emsp; The standards are outlined in the [corresponding folder]().
 
 This means that you can:
- - read the [standards](), to see if you like what voltrix has to offer!
- - follow the standard to port voltrix to your favorite color-configurable application!
+ - read the standards, to see if you like what voltrix has to offer!
+ - follow the standards, to port voltrix to your favorite color-configurable application!
 
