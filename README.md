@@ -7,14 +7,22 @@
 
 ## platforms
 
-### vim &emsp; &emsp; &emsp; [latest](./vim/colors/voltrix-bold.vim)
+<div>
+<img align=right width=100vw src=https://www.vim.org/images/vimlogo.svg>
+
+### Vim &emsp; ( [voltrix-bold.vim](./vim/colors/voltrix-bold.vim) )
+
 - works for GUI. 256color, and 16color
 - most common highlight groups targeted; see [voltrix-bold.colortemplate](./vim/voltrix-bold.colortemplate) for details
 
 **WORK IN PROGRESS** - functional in every use case I've tested it for, but *does not target all highlight groups*, and *may yet have problems highlighting filetypes that I don't interact with*.\
 If you run into an issue, feel free to [create an issue thread](https://gitlab.com/volbot-unix-toolkit/voltrix/-/issues/new), or get in contact with me!
+</div>
 
-### alacritty &emsp; &emsp; &emsp; [latest](./alacritty/voltrix-bold.toml)
+<div>
+<img align=right width=100vw src=https://upload.wikimedia.org/wikipedia/commons/9/90/Alacritty_logo.svg>
+
+### Alacritty &emsp; ( [voltrix-bold.toml](./alacritty/voltrix-bold.toml) )
 - defines colors for:
     - foreground/background
     - cursor/selection
