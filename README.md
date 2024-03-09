@@ -6,12 +6,22 @@
 &emsp;I plan to include more specifications on more aesthetic fronts, further down the line, but I hate attaching my name to things that I don't feel are a complete deliverable, and again, I'm _very_ specific about my motifs.
 
 ## platforms
-&emsp; voltrix is officially available on the following platforms.
 
-_do that thing from resume-builder's header where it has text justified on both sides with space in the middle_
+### vim &emsp; &emsp; &emsp; [latest](./vim/colors/voltrix-bold.vim)
+- works for GUI. 256color, and 16color
+- most common highlight groups targeted; see [voltrix-bold.colortemplate](./vim/voltrix-bold.colortemplate) for details
 
+**WORK IN PROGRESS** - functional in every use case I've tested it for, but *does not target all highlight groups*, and *may yet have problems highlighting filetypes that I don't interact with*.\
+If you run into an issue, feel free to [create an issue thread](https://gitlab.com/volbot-unix-toolkit/voltrix/-/issues/new), or get in contact with me!
+
+### alacritty &emsp; &emsp; &emsp; [latest](./alacritty/voltrix-bold.toml)
+- defines colors for:
+    - foreground/background
+    - cursor/selection
+    - 16color TERM applications
+    
 ## documentation
-&emsp; voltrix is disgustingly standardized, and will continue to become even more so, until you could, proverbially, describe it to a blind person. The standards are outlined in the [corresponding folder]().
+&emsp; voltrix is disgustingly standardized, and will continue to become even more so, until you could, proverbially, describe it to a blind person. The standards are outlined in the [corresponding folder](./standards/).
 
 This means that you can:
  - read the standards, to see if you like what voltrix has to offer!
