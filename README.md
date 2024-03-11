@@ -12,7 +12,7 @@
 
 ### Vim &emsp; ( [voltrix-bold.vim](./vim/colors/voltrix-bold.vim) )
 
-- works for GUI. 256color, and 16color
+- works for GUI, 256color, and 16color
 - most common highlight groups targeted; see [voltrix-bold.colortemplate](./vim/voltrix-bold.colortemplate) for details
 
 **WORK IN PROGRESS** - functional in every use case I've tested it for, but *does not target all highlight groups*, and *may yet have problems highlighting filetypes that I don't interact with*.\
