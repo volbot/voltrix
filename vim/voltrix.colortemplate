@@ -1,8 +1,8 @@
 ; vim: ft=colortemplate fdm=marker cc=22,42,60 et ts=2 sw=2
 
 ; Information {{{
-Full name: voltrix-bold
-Short name: voltrix-bold
+Full name: voltrix
+Short name: voltrix
 Author: allomyrina volbot <volbot.tech@gmail.com>
 Description: a sweet, maximalist colorscheme for Vim
 ; }}}
@@ -10,26 +10,26 @@ Description: a sweet, maximalist colorscheme for Vim
 ; voltrix Color palette {{{
 ; Color name         GUI                 Base256           Base16
 Color: black         #090609             ~                 Black
-Color: hotpink       #DA4E7D             ~                 Red
-Color: lime          #9ACD32             ~                 Green
-Color: goldenrod     #FFD700             ~                 Yellow
-Color: cornflower    #6495ED             ~                 Blue
-Color: purple        #C37FFC             ~                 Magenta
-Color: aquamarine    #66CDAA             ~                 Cyan
-Color: lightgray     #E5E5E5             ~                 LightGray
+Color: hotpink       #de4779             ~                 Red
+Color: lime          #c4de47             ~                 Green
+Color: goldenrod     #deac47             ~                 Yellow
+Color: cornflower    #4779de             ~                 Blue
+Color: purple        #ac47de             ~                 Magenta
+Color: aquamarine    #47deac             ~                 Cyan
+Color: lightgray     #e9dde9             ~                 LightGray
 
-Color: darkgray      #6B6B6B             ~                 DarkGray
-Color: pink          #F5A9B8             ~                 LightRed
-Color: lightlime     #B3F075             ~                 LightGreen
-Color: yellow        #FFEC8B             ~                 LightYellow
-Color: skyblue       #87CEEB             ~                 LightBlue
-Color: plum          #DDA0DD             ~                 LightMagenta
-Color: turquoise     #AFEEEE             ~                 LightCyan
-Color: white         #FCFCFC             ~                 White
+Color: darkgray      #776077             ~                 DarkGray
+Color: pink          #e6829b             ~                 LightRed
+Color: lightlime     #d2e672             ~                 LightGreen
+Color: yellow        #e6c072             ~                 LightYellow
+Color: skyblue       #7298e6             ~                 LightBlue
+Color: plum          #c072e6             ~                 LightMagenta
+Color: turquoise     #72e6c0             ~                 LightCyan
+Color: white         #fdfcfd             ~                 White
 
 Color: truegreen     #009845             ~                 Green
 Color: royalpurple   #68228B             ~                 Magenta
-Color: truered       #ff0000             ~                 Red
+Color: burntorange   #de6047             ~                 Red
 
 ; }}}
 
@@ -115,7 +115,7 @@ Visual               fg                  royalpurple
 
 Comment              aquamarine          none
 Constant             plum                none
-Error                lightgray           truered
+Error                lightgray           burntorange
 Identifier           hotpink             none              t=bold
 Ignore               black               none
 PreProc              cornflower          none

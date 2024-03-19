@@ -1,38 +1,37 @@
 # voltrix
 # a sweet, maximalist colorscheme for alacritty
-# by allomyrina volbot <volbot333@gmail.com>
+# ( allomyrina volbot <volbot.tech@gmail.com> )
 
 # Normal colors
 [colors.normal]
 black   = '#090609'
-red     = '#da4e7d'
-green   = '#8bd225'
-yellow  = '#f4d661'
-blue    = '#76a3e4'
-magenta = '#c37ffc'
-cyan    = '#6cb6ab'
-white   = '#e5deee'
+red     = '#de4779'
+green   = '#c4de47'
+yellow  = '#deac47'
+blue    = '#4779de'
+magenta = '#ac47de'
+cyan    = '#47deac'
+white   = '#e9dde9'
 
 # Bright colors
 [colors.bright]
-black   = '#6b6b6b'
-red     = '#f5a9b8'
-green   = '#bfd86d'
-yellow  = '#f5e498'
-blue    = '#87c3ff'
-magenta = '#cc9bfc'
-cyan    = '#acd4cd'
+black   = '#776077'
+red     = '#e6829b'
+green   = '#d2e672'
+yellow  = '#e6c072'
+blue    = '#7298e6'
+magenta = '#c072e6'
+cyan    = '#72e6c0'
 white   = '#fdfcfd'
 
 [colors.primary] #default
-background = '#090609' #[colors.normal.black]
-foreground = '#fdfcfd' #[colors.bright.white]
+background = '#090609'
+foreground = '#fdfcfd'
 
 [colors.cursor]
-cursor  = '#009845' # green from box logo
-text    = '#fdfcfd' #[colors.bright.white]
+cursor  = '#009845'
+text    = '#fdfcfd'
 
 [colors.selection]
-background  = '#662a90' # purple from box logo
-text        = '#fdfcfd' #[colors.bright.white]
-
+background  = '#68228B'
+text        = '#fdfcfd'

@@ -10,10 +10,10 @@
 <div>
 <img align=right width=100vw src=https://www.vim.org/images/vimlogo.svg>
 
-### Vim &emsp; ( [voltrix-bold.vim](./vim/colors/voltrix-bold.vim) )
+### Vim &emsp; ( [voltrix.vim](./vim/colors/voltrix.vim) )
 
 - works for GUI, 256color, and 16color
-- most common highlight groups targeted; see [voltrix-bold.colortemplate](./vim/voltrix-bold.colortemplate) for details
+- most common highlight groups targeted; see [voltrix.colortemplate](./vim/voltrix.colortemplate) for details
 
 **WORK IN PROGRESS** - functional in every use case I've tested it for, but *does not target all highlight groups*, and *may yet have problems highlighting filetypes that I don't interact with*.\
 If you run into an issue, feel free to [create an issue thread](https://gitlab.com/volbot-unix-toolkit/voltrix/-/issues/new), or get in contact with me!
@@ -22,14 +22,14 @@ If you run into an issue, feel free to [create an issue thread](https://gitlab.c
 <div>
 <img align=right width=100vw src=https://upload.wikimedia.org/wikipedia/commons/9/90/Alacritty_logo.svg>
 
-### Alacritty &emsp; ( [voltrix-bold.toml](./alacritty/voltrix-bold.toml) )
+### Alacritty &emsp; ( [voltrix.toml](./alacritty/voltrix.toml) )
 - defines colors for:
     - foreground/background
     - cursor/selection
     - 16color TERM applications
     
 ## documentation
-&emsp; voltrix is disgustingly standardized, and will continue to become even more so, until you could, proverbially, describe it to a blind person. The standards are outlined in the [corresponding folder](./standards/).
+&emsp; voltrix is disgustingly standardized, and will continue to become even more so, until you could, proverbially, describe it to a blind person. The standards are outlined in the [corresponding folder](./standards/). 
 
 This means that you can:
  - read the standards, to see if you like what voltrix has to offer!
