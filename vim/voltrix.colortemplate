@@ -11,7 +11,7 @@ Description: a sweet, maximalist colorscheme for Vim
 ; Color name         GUI                 Base256           Base16
 Color: black         #090609             ~                 Black
 Color: hotpink       #de4779             ~                 Red
-Color: lime          #c4de47             ~                 Green
+Color: lime          #79de47             ~                 Green
 Color: goldenrod     #deac47             ~                 Yellow
 Color: cornflower    #4779de             ~                 Blue
 Color: purple        #ac47de             ~                 Magenta
@@ -20,7 +20,7 @@ Color: lightgray     #e9dde9             ~                 LightGray
 
 Color: darkgray      #776077             ~                 DarkGray
 Color: pink          #e6829b             ~                 LightRed
-Color: lightlime     #d2e672             ~                 LightGreen
+Color: lightlime     #98e672             ~                 LightGreen
 Color: yellow        #e6c072             ~                 LightYellow
 Color: skyblue       #7298e6             ~                 LightBlue
 Color: plum          #c072e6             ~                 LightMagenta

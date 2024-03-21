@@ -6,7 +6,7 @@
 [colors.normal]
 black   = '#090609'
 red     = '#de4779'
-green   = '#c4de47'
+green   = '#79de47'
 yellow  = '#deac47'
 blue    = '#4779de'
 magenta = '#ac47de'
@@ -17,7 +17,7 @@ white   = '#e9dde9'
 [colors.bright]
 black   = '#776077'
 red     = '#e6829b'
-green   = '#d2e672'
+green   = '#98e672'
 yellow  = '#e6c072'
 blue    = '#7298e6'
 magenta = '#c072e6'
