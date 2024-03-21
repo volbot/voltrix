@@ -10,21 +10,21 @@ Description: a sweet, maximalist colorscheme for Vim
 ; voltrix Color palette {{{
 ; Color name         GUI                 Base256           Base16
 Color: black         #090609             ~                 Black
-Color: hotpink       #de4779             ~                 Red
-Color: lime          #79de47             ~                 Green
-Color: goldenrod     #deac47             ~                 Yellow
-Color: cornflower    #4779de             ~                 Blue
-Color: purple        #ac47de             ~                 Magenta
-Color: aquamarine    #47deac             ~                 Cyan
+Color: pink          #de4779             ~                 Red
+Color: green         #79de47             ~                 Green
+Color: gorod         #deac47             ~                 Yellow
+Color: blue          #4779de             ~                 Blue
+Color: orchid        #ac47de             ~                 Magenta
+Color: aqua          #47deac             ~                 Cyan
 Color: lightgray     #e9dde9             ~                 LightGray
 
-Color: darkgray      #776077             ~                 DarkGray
-Color: pink          #e6829b             ~                 LightRed
-Color: lightlime     #98e672             ~                 LightGreen
-Color: yellow        #e6c072             ~                 LightYellow
-Color: skyblue       #7298e6             ~                 LightBlue
-Color: plum          #c072e6             ~                 LightMagenta
-Color: turquoise     #72e6c0             ~                 LightCyan
+Color: gray          #776077             ~                 DarkGray
+Color: lightpink     #e6829b             ~                 LightRed
+Color: lightgreen    #98e672             ~                 LightGreen
+Color: lightgorod    #e6c072             ~                 LightYellow
+Color: lightblue     #7298e6             ~                 LightBlue
+Color: lightorchid   #c072e6             ~                 LightMagenta
+Color: lightaqua     #72e6c0             ~                 LightCyan
 Color: white         #fdfcfd             ~                 White
 
 Color: truegreen     #009845             ~                 Green
@@ -35,8 +35,8 @@ Color: burntorange   #de6047             ~                 Red
 
 ; voltrix Terminal colors {{{
 ; Define terminal colors (for immersion)
-Term colors: black    hotpink   lime        goldenrod   cornflower  purple  aquamarine  lightgray
-Term colors: darkgray pink      lightlime   yellow      skyblue     plum    turquoise   white
+Term colors: black pink green gorod blue orchid aqua lightgray
+Term colors: gray lightpink lightgreen lightgorod lightblue lightorchid lightaqua white
 
 ; }}}
 
@@ -87,7 +87,7 @@ Normal               white               none
 Terminal             white               black
 CursorLine           omit                black
 StatusLineTerm       white               royalpurple       bold
-StatusLineNC         darkgray            royalpurple       bold
+StatusLineNC         gray                royalpurple       bold
 
 Variant: gui
 
@@ -95,7 +95,7 @@ Normal               white               black
 Terminal             white               black
 CursorLine           omit                black
 StatusLineTerm       white               royalpurple       bold
-StatusLineTermNC     darkgray            royalpurple       bold
+StatusLineTermNC     gray                royalpurple       bold
 
 Variant: gui 256 8
 
@@ -107,22 +107,22 @@ CursorLineNr         omit                black             bold
 FoldColumn           none                black
 Folded               white               royalpurple
 IncSearch            white               royalpurple
-LineNr               goldenrod           none              bold
+LineNr               gorod               none              bold
 Search               white               truegreen
 StatusLine           white               royalpurple       bold
-StatusLineNC         darkgray            royalpurple       bold
+StatusLineNC         gray                royalpurple       bold
 Visual               fg                  royalpurple
 
-Comment              aquamarine          none
-Constant             plum                none
+Comment              aqua          none
+Constant             lightorchid         none
 Error                lightgray           burntorange
-Identifier           hotpink             none              t=bold
+Identifier           pink                none              t=bold
 Ignore               black               none
-PreProc              cornflower          none
-Special              lime                none
-Statement            goldenrod           none              g=bold
-Type                 lightlime           none              g=bold
-Underlined           skyblue             none              underline
+PreProc              blue                none
+Special              green               none
+Statement            gorod               none              g=bold
+Type                 lightgreen          none              g=bold
+Underlined           lightblue           none              underline
 
 lCursor              -> Cursor
 
