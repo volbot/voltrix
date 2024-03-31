@@ -39,7 +39,7 @@ If you run into an issue, feel free to [create an issue thread](https://gitlab.c
 
 ### Fallout 4
 &emsp; As described below, the voltrix standard is easy to follow with a little color-wheel know-how, and I've thusly applied the colorscheme to Fallout 4, replacing that garish green with a calmer, more varied palette.\
-&emsp; Doing so can be complicated, so in the interest of _this_ page's brevity, I've written [a brief guide](./fallout4/README.md).
+&emsp; Doing so can be complicated, so in the interest of _this_ page's brevity, I've written [a brief guide](./fallout-4/README.md).
 
 | Main HUD | Load Screen |
 | --- | --- |
