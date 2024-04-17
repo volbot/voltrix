@@ -15,11 +15,11 @@
 - most common highlight groups targeted; see [voltrix.colortemplate](./vim/voltrix.colortemplate) for details
 
 **WORK IN PROGRESS** - functional in every use case I've tested it for, but *does not target all highlight groups*, and *may yet have problems highlighting filetypes that I don't interact with*.\
-If you run into an issue, feel free to [create an issue thread](https://gitlab.com/volbot-unix-toolkit/voltrix/-/issues/new), or get in contact with me!
+If you run into an issue, feel free to [create an issue thread](https://gitlab.com/volbot/voltrix/-/issues/new), or get in contact with me!
 
 | Bash | HTML |
 | --- | --- |
-|<img src=examples/VOLTRIX_VIM_BASH.png> | <img src=examples/VOLTRIX_VIM_HTML.png> |
+|<img src=doc/examples/VOLTRIX_VIM_BASH.png> | <img src=doc/examples/VOLTRIX_VIM_HTML.png> |
 
 ---
 
@@ -33,17 +33,17 @@ If you run into an issue, feel free to [create an issue thread](https://gitlab.c
 
 | Neofetch | ncmpcpp |
 | --- | --- |
-|<img src=examples/VOLTRIX_ALACRITTY_NEOFETCH.png> | <img src=examples/VOLTRIX_ALACRITTY_NCMPCPP.png> |
+|<img src=doc/examples/VOLTRIX_ALACRITTY_NEOFETCH.png> | <img src=doc/examples/VOLTRIX_ALACRITTY_NCMPCPP.png> |
 
 ---
 
 ### Fallout 4
 &emsp; As described below, the voltrix standard is easy to follow with a little color-wheel know-how, and I've thusly applied the colorscheme to Fallout 4, replacing that garish green with a calmer, more varied palette.\
-&emsp; Doing so can be complicated, so in the interest of _this_ page's brevity, I've written [a brief guide](./fallout4/README.md).
+&emsp; Doing so can be complicated, so in the interest of _this_ page's brevity, I've written [a brief guide](fallout4/README.md).
 
 | Main HUD | Load Screen |
 | --- | --- |
-|<img src=examples/VOLTRIX_FO4_VATS.png> | <img src=examples/VOLTRIX_FO4_LOADING.png> |
+|<img src=doc/examples/VOLTRIX_FO4_VATS.png> | <img src=doc/examples/VOLTRIX_FO4_LOADING.png> |
     
 ## documentation
 &emsp; voltrix is disgustingly standardized, and will continue to become even more so, until you could, proverbially, describe it to a blind person. The standards are outlined in the [corresponding folder](./standards/).
