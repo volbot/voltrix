@@ -1,9 +1,9 @@
-; vim: ft=colortemplate fdm=marker cc=22,42,60 et ts=2 sw=2
+; vim: ft=colortemplate 
 
 ; Information {{{
 Full name: voltrix
 Short name: voltrix
-Author: allomyrina volbot <volbot.tech@gmail.com>
+Author: allomyrina volbot <tech@volbot.org>
 Description: a sweet, maximalist colorscheme for Vim
 ; }}}
 
@@ -76,6 +76,7 @@ String            -> Constant
 Structure         -> Type
 Tag               -> Special
 Typedef           -> Type
+lCursor           -> Cursor
 ; }}}
 
 ; voltrix Highlight groups {{{
@@ -86,47 +87,54 @@ Variant: 256 8
 Normal               white               none
 Terminal             white               black
 CursorLine           omit                black
-StatusLineTerm       white               royalpurple       bold
-StatusLineNC         gray                royalpurple       bold
+StatusLineTerm       white               gray              bold
+StatusLineNC         lightgray           gray              bold
 
 Variant: gui
 
 Normal               white               black
 Terminal             white               black
 CursorLine           omit                black
-StatusLineTerm       white               royalpurple       bold
-StatusLineTermNC     gray                royalpurple       bold
+StatusLineTerm       white               gray              bold
+StatusLineTermNC     lightgray           gray              bold
 
 Variant: gui 256 8
 
 ; Group              Foreground          Background        Attributes
+; vim specific
 ColorColumn          omit                black
 Cursor               fg                  truegreen
 CursorColumn         omit                black
 CursorLineNr         omit                black             bold
 FoldColumn           none                black
-Folded               white               royalpurple
+Folded               white               gray 
 IncSearch            white               royalpurple
 LineNr               gorod               none              bold
 Search               white               truegreen
-StatusLine           white               royalpurple       bold
-StatusLineNC         gray                royalpurple       bold
 Visual               fg                  royalpurple
+StatusLine           white               gray              bold
+StatusLineNC         lightgray           gray              bold
 
-Comment              aqua          none
-Constant             lightorchid         none
+ToolbarLine          white               black
+ToolbarButton        black               gray              bold
+
+SignColumn           none                gray
+; version control integration
+DiffAdd              gray                green             bold
+DiffChange           gray                pink              bold
+DiffDelete           gray                burntorange       bold
+DiffText             white               aqua              reverse
+
+; general syntax highlights
+Comment              aqua                none
+Constant             orchid              none
 Error                lightgray           burntorange
 Identifier           pink                none              t=bold
 Ignore               black               none
 PreProc              blue                none
-Special              green               none
+Special              green               none              bold
 Statement            gorod               none              g=bold
-Type                 lightgreen          none              g=bold
-Underlined           lightblue           none              underline
-
-lCursor              -> Cursor
-
-ToolbarLine          white               black
-ToolbarButton        white               royalpurple       bold
+Type                 green               none              bold
+Underlined           blue                none              underline
 
 ; }}}
