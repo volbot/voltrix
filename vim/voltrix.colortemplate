@@ -129,10 +129,10 @@ DiffText             white               aqua              reverse
 Comment              aqua                none
 Constant             orchid              none
 Error                lightgray           burntorange
-Identifier           pink                none              t=bold
+Identifier           pink                none              
 Ignore               black               none
 PreProc              blue                none
-Special              green               none              bold
+Special              pink                none              bold
 Statement            gorod               none              g=bold
 Type                 green               none              bold
 Underlined           blue                none              underline
