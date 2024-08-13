@@ -27,14 +27,6 @@
 
 ---
 
-### Fallout 4
-&emsp; As described below, the voltrix standard is easy to follow with a little color-wheel know-how, and I've thusly applied the colorscheme to Fallout 4, replacing that garish green with a calmer, more varied palette.\
-&emsp; Doing so can be complicated, so in the interest of _this_ page's brevity, I've written [a brief guide](fallout4/README.md).
-
-| Main HUD | Load Screen |
-| --- | --- |
-|<img src=doc/examples/VOLTRIX_FO4_VATS.png> | <img src=doc/examples/VOLTRIX_FO4_LOADING.png> |
-    
 ## documentation
 &emsp; voltrix is disgustingly standardized, and will continue to become even more so, until you could, proverbially, describe it to a blind person. The standards are outlined in the [corresponding folder](./standards/).
 
