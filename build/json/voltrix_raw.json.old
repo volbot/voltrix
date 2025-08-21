@@ -1,0 +1,42 @@
+{
+    "black": {
+        "dark": "#090609",
+        "normal": "#271a27",
+        "bright": "#462f46"
+    },
+    "red": {
+        "dark": "#a21d49",
+        "normal": "#cd255d",
+        "bright": "#de4779"
+    },
+    "green": {
+        "dark": "#49a21d",
+        "normal": "#5dcd25",
+        "bright": "#79de47"
+    },
+    "yellow": {
+        "dark": "#a2761d",
+        "normal": "#cd9525",
+        "bright": "#deac47"
+    },
+    "blue": {
+        "dark": "#1d49a2",
+        "normal": "#255dcd",
+        "bright": "#4779de"
+    },
+    "magenta": {
+        "dark": "#761da2",
+        "normal": "#9525cd",
+        "bright": "#ac47de"
+    },
+    "cyan": {
+        "dark": "#1da276",
+        "normal": "#25cd95",
+        "bright": "#47deac"
+    },
+    "white": {
+        "dark": "#867986",
+        "normal": "#b6afb6",
+        "bright": "#ffffff"
+    }
+}

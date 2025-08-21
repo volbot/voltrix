@@ -1,0 +1,17 @@
+-+-------------+-
+|| COLOR SPACE ||
+-+-------------+--------------------------------------------------------------------------------+
+ | - voltrix has two main "color spaces" that I use to select colors: one DARK, and one BRIGHT. |
+ |  This is to make it trivial to select the base 16 base-16 colors for an ANSI terminal.       |
+ |   - the DARK color scheme is the standard colorscheme that I designed to begin with.         |
+ |    Regardless of hue, it is fixed at a saturation of 69.6% and a lightness of 57.5%.         |
+ |   - the BRIGHT color scheme uses the DARK color scheme, lightened by 10%.                    |
+ |    As you may have guessed, this results in a saturation of 69.6% and a lightness of 57.5%.  | 
+ +----------------------------------------------------------------------------------------------+
+
+-+----------+-
+|| PALETTES ||
+-+----------+-
+ |   TODO   |
+ +----------+
+
