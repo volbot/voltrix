@@ -1,0 +1,3 @@
+[submodule "voltrix.vim"]
+	path = voltrix.vim
+	url = https://github.com/volbot/voltrix.vim
