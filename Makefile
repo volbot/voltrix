@@ -8,6 +8,8 @@ nvim: json
 vim: json
 	bash make.sh 'vim'
 	vim --not-a-term -N -u NONE -n --cmd ':source make.vim' >/dev/null 2>&1
+	cp ./build/vim/voltrix.colortemplate ./voltrix.vim/templates/voltrix.colortemplate
+	cp -r ./build/vim/colors ./voltrix.vim/colors
 
 alacritty: json
 	bash make.sh 'alacritty'
