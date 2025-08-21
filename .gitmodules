@@ -1,3 +1,6 @@
 [submodule "voltrix.vim"]
 	path = voltrix.vim
 	url = git@github.com:volbot/voltrix.vim.git
+[submodule "voltrix.nvim"]
+	path = voltrix.nvim
+	url = git@github.com:volbot/voltrix.nvim.git

@@ -4,6 +4,7 @@ all: json kitty alacritty nvim vim
 
 nvim: json
 	bash scripts/make.sh 'nvim'
+	cp build/nvim/voltrix_generated.lua voltrix.nvim/lua/voltrix_generated.lua
 
 vim: json
 	bash scripts/make.sh 'vim'
