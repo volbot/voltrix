@@ -1,13 +1,13 @@
 #!/bin/sh
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
-BUILD_DIR="${SCRIPT_DIR}/build"
+BUILD_DIR="./build"
 OUTPUT_TITLE="voltrix"
 OUTPUT_TITLE_APPEND=""
 
 ANSI_16=()
 
-INPUT_FILE="${SCRIPT_DIR}/build/json/voltrix_raw.json" verbose_level=0
+INPUT_FILE="./build/json/voltrix_raw.json" verbose_level=0
 while getopts :i:v flag; do
     case $flag in
         (i) INPUT_FILE=$OPTARG;;

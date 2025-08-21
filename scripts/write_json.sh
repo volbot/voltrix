@@ -1,7 +1,7 @@
 #!/bin/sh
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
-BUILD_DIR="${SCRIPT_DIR}/build"
+BUILD_DIR="./build"
 OUTPUT_TITLE="voltrix"
 OUTPUT_TITLE_APPEND=""
 
