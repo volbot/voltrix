@@ -1,4 +1,4 @@
-.PHONY: all json kitty alacritty nvim clean
+.PHONY: all json kitty alacritty nvim vim clean
 
 all: json kitty alacritty nvim vim
 
@@ -6,6 +6,7 @@ nvim: json
 	bash scripts/make.sh 'nvim'
 	cp build/nvim/voltrix_generated.lua voltrix.nvim/lua/voltrix_generated.lua
 
+# building for vim requires vim-devel
 vim: json
 	bash scripts/make.sh 'vim'
 	vim --not-a-term -N -u NONE -n --cmd ':source scripts/make.vim' >/dev/null 2>&1
