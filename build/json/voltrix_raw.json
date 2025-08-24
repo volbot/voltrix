@@ -1,9 +1,4 @@
 {
-    "black": {
-        "dark": "#090609",
-        "normal": "#271a27",
-        "bright": "#462f46"
-    },
     "red": {
         "dark": "#a21d49",
         "normal": "#cd255d",
@@ -34,9 +29,19 @@
         "normal": "#25cd95",
         "bright": "#47deac"
     },
+    "orchid": {
+        "dark": "#a21d8c",
+        "normal": "#cd25b1",
+        "bright": "#de47c5"
+    },
+    "black": {
+        "dark": "#0b0910",
+        "normal": "#221c31",
+        "bright": "#382e52"
+    },
     "white": {
-        "dark": "#867986",
-        "normal": "#b6afb6",
+        "dark": "#7d7986",
+        "normal": "#b1afb6",
         "bright": "#ffffff"
     }
 }

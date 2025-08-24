@@ -1,8 +1,8 @@
 local generated = {} 
  generated.palette = { 
-     dark0_hard = "#090609", 
-     dark0 = "#271a27", 
-     dark0_soft = "#462f46", 
+     dark0_hard = "#0b0910", 
+     dark0 = "#221c31", 
+     dark0_soft = "#382e52", 
      dark1 = "#3c3836", 
      dark2 = "#504945", 
      dark3 = "#665c54", 
@@ -20,14 +20,14 @@ local generated = {}
      bright_blue = "#4779de", 
      bright_purple = "#ac47de", 
      bright_aqua = "#47deac", 
-     bright_orchid = "null", 
+     bright_orchid = "#de47c5", 
      neutral_red = "#cd255d", 
      neutral_green = "#5dcd25", 
      neutral_yellow = "#cd9525", 
      neutral_blue = "#255dcd", 
      neutral_purple = "#9525cd", 
      neutral_aqua = "#25cd95", 
-     neutral_orchid = "null", 
+     neutral_orchid = "#cd25b1", 
      faded_red = "#9d0006", 
      faded_green = "#79740e", 
      faded_yellow = "#b57614", 
@@ -53,6 +53,6 @@ local generated = {}
      light_aqua_hard = "#e6e9c1", 
      light_aqua = "#e8e5b5", 
      light_aqua_soft = "#e1dbac", 
-     gray = "#867986", 
+     gray = "#7d7986", 
  } 
  return generated 

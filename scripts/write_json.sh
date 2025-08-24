@@ -14,8 +14,11 @@ while getopts :v flag; do
 done
 shift "$((OPTIND - 1))"
 
-COLORS=( "black" "red" "green" "yellow" "blue" "magenta" "cyan" "white" "orchid" )
-HUES=( 300 340 100 40 220 280 160 300 310)
+COLORS=( "red" "green" "yellow" "blue" "magenta" "cyan" "orchid" )
+HUES=( 340 100 40 220 280 160 310 )
+
+BLACK_HUE=257
+WHITE_HUE=257
 
 mkdir -p "$BUILD_DIR"
 
@@ -32,22 +35,23 @@ acquire_file () {
 
 write () {
     echo "{"
-    echo "    \"${COLORS[0]}\": {"
-    echo "        \"dark\": \"$(pastel format hex hsl\(${HUES[0]},\ 20.0%,\ 2.9%\))\","
-    echo "        \"normal\": \"$(pastel format hex hsl\(${HUES[0]},\ 20.0%,\ 12.9%\))\","
-    echo "        \"bright\": \"$(pastel format hex hsl\(${HUES[0]},\ 20.0%,\ 22.9%\))\""
-    echo "    },"
-    for i in {1..6}; do
+    for i in ${!COLORS[@]}; do
         echo "    \"${COLORS[${i}]}\": {"
         echo "        \"dark\": \"$(pastel format hex hsl\(${HUES[${i}]},\ 69.6%,\ 37.5%\))\","
         echo "        \"normal\": \"$(pastel format hex hsl\(${HUES[${i}]},\ 69.6%,\ 47.5%\))\","
         echo "        \"bright\": \"$(pastel format hex hsl\(${HUES[${i}]},\ 69.6%,\ 57.5%\))\""
         echo "    },"
     done
-    echo "    \"${COLORS[7]}\": {"
-    echo "        \"dark\": \"$(pastel format hex hsl\(${HUES[7]},\ 5.0%,\ 50.0%\))\","
-    echo "        \"normal\": \"$(pastel format hex hsl\(${HUES[7]},\ 5.0%,\ 70.0%\))\","
-    echo "        \"bright\": \"$(pastel format hex hsl\(${HUES[7]},\ 5.0%,\ 99.9%\))\""
+    echo "    \"black\": {"
+    # can't decide between black base lightness at 5% or 9.8%. leaning toward 5%
+    echo "        \"dark\": \"$(pastel format hex hsl\(${BLACK_HUE},\ 28.0%,\ 5.0%\))\","
+    echo "        \"normal\": \"$(pastel format hex hsl\(${BLACK_HUE},\ 28.0%,\ 15.0%\))\","
+    echo "        \"bright\": \"$(pastel format hex hsl\(${BLACK_HUE},\ 28.0%,\ 25.0%\))\""
+    echo "    },"
+    echo "    \"white\": {"
+    echo "        \"dark\": \"$(pastel format hex hsl\(${WHITE_HUE},\ 5.0%,\ 50.0%\))\","
+    echo "        \"normal\": \"$(pastel format hex hsl\(${WHITE_HUE},\ 5.0%,\ 70.0%\))\","
+    echo "        \"bright\": \"$(pastel format hex hsl\(${WHITE_HUE},\ 5.0%,\ 99.9%\))\""
     echo "    }"
     echo "}"
 }
