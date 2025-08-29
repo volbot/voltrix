@@ -12,7 +12,7 @@ Background: dark
 
 ; voltrix Color palette {{{
 ; Color name         GUI                  Base256           Base16
-Color: black         #2c2441        ~                 Black
+Color: black         #221c31        ~                 Black
 Color: pink          #cd255d          ~                 Red
 Color: green         #5dcd25        ~                 Green
 Color: gorod         #cd9525       ~                 Yellow

@@ -1,8 +1,8 @@
 local generated = {} 
  generated.palette = { 
-     dark0_hard = "#161220", 
-     dark0 = "#2c2441", 
-     dark0_soft = "#433761", 
+     dark0_hard = "#0b0910", 
+     dark0 = "#221c31", 
+     dark0_soft = "#382e52", 
      dark1 = "#3c3836", 
      dark2 = "#504945", 
      dark3 = "#665c54", 

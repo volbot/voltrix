@@ -1,8 +1,8 @@
 # hardcoded fg and bg
 foreground #ffffff
-background #161220
+background #0b0910
 # black
-color0  #161220
+color0  #0b0910
 color8  #7d7986
 # red
 color1  #cd255d

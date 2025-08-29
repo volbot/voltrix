@@ -35,9 +35,9 @@
         "bright": "#de47c5"
     },
     "black": {
-        "dark": "#161220",
-        "normal": "#2c2441",
-        "bright": "#433761"
+        "dark": "#0b0910",
+        "normal": "#221c31",
+        "bright": "#382e52"
     },
     "white": {
         "dark": "#7d7986",

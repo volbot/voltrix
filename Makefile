@@ -1,6 +1,6 @@
 .PHONY: all json kitty alacritty nvim vim clean
 
-all: json kitty alacritty nvim vim
+all: json kitty alacritty nvim vim helix
 
 nvim: json
 	bash scripts/make.sh 'nvim'
@@ -15,6 +15,13 @@ vim: json
 
 alacritty: json
 	bash scripts/make.sh 'alacritty'
+
+helix: json
+	bash scripts/make.sh 'helix'
+	mv build/helix/voltrix.toml build/helix/voltrix_generated.toml
+	cat schemes/helix/scheme.toml > build/helix/voltrix.toml
+	cat build/helix/voltrix_generated.toml >> build/helix/voltrix.toml
+	cp build/helix/voltrix.toml ~/.config/helix/themes/voltrix.toml
 
 kitty: json
 	bash scripts/make.sh 'kitty'

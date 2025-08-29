@@ -140,6 +140,33 @@ make () {
             echo "text        = '${WHITE_BRIG}'"
         }
     ;;
+    "helix")
+        OUTPUT_FILETYPE="toml"
+
+        write() {
+            echo "# Palette Definitions"
+            echo "[palette]"
+            echo "black   =         \"${BLACK_DARK}\""
+            echo "red     =         \"${RED_NORM}\""
+            echo "green   =         \"${GREEN_NORM}\""
+            echo "yellow  =         \"${YELLOW_NORM}\""
+            echo "blue    =         \"${BLUE_NORM}\""
+            echo "magenta =         \"${MAGENTA_NORM}\""
+            echo "cyan    =         \"${CYAN_NORM}\""
+            echo "orchid    =         \"${ORCHID_NORM}\""
+            echo "gray    =         \"${WHITE_DARK}\""
+            echo "light-gray   =    \"${WHITE_NORM}\""
+            echo "light-red     =   \"${RED_BRIG}\""
+            echo "light-green   =   \"${GREEN_BRIG}\""
+            echo "light-yellow  =   \"${YELLOW_BRIG}\""
+            echo "light-blue    =   \"${BLUE_BRIG}\""
+            echo "light-magenta =   \"${MAGENTA_BRIG}\""
+            echo "light-cyan    =   \"${CYAN_BRIG}\""
+            echo "light-orchid = \"${ORCHID_BRIG}\""
+            echo "white   =         \"${WHITE_BRIG}\""
+            echo "old-green = \"#68228B\""
+        }
+    ;;
 "nvim")
     OUTPUT_FILETYPE="lua"
     OUTPUT_TITLE_APPEND="_generated"
@@ -353,7 +380,7 @@ return 0
 mkdir -p build
 
 ARGS=( "$@" )
-OPTIONS=("kitty" "alacritty" "nvim")
+OPTIONS=("kitty" "alacritty" "nvim" "helix")
 
 if [[ $# -eq 0 || "$ARGS" == *"all"* ]]; then
     ARGS=("${OPTIONS[@]}")
