@@ -1,12 +1,12 @@
 local generated = {} 
  generated.palette = { 
      dark0_hard = "#0b0910", 
-     dark0 = "#221c31", 
+     dark0 = "#0b0910", 
      dark0_soft = "#382e52", 
-     dark1 = "#3c3836", 
-     dark2 = "#504945", 
-     dark3 = "#665c54", 
-     dark4 = "#7c6f64", 
+     dark1 = "#373049", 
+     dark2 = "#3b344e", 
+     dark3 = "#423a58", 
+     dark4 = "#473e5f", 
      light0_hard = "#f9f5d7", 
      light0 = "#fbf1c7", 
      light0_soft = "#f2e5bc", 

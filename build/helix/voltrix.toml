@@ -1,30 +1,30 @@
-"type" = "yellow"
+"type" = "blue"
 "constant" = "magenta"
 "constant.numeric" = "magenta"
 "constant.character.escape" = "orange"
-"string" = "green"
-"string.regexp" = "blue"
-"comment" = "grey0"
-"variable" = "white"
-"variable.builtin" = "blue"
-"variable.parameter" = "white"
-"variable.other.member" = "white"
-"label" = "aqua"
+"string" = "cyan"
+"string.regexp" = "red"
+"comment" = "light-gray"
+"variable" = "fg"
+"variable.builtin" = "red"
+"variable.parameter" = "fg"
+"variable.other.member" = "fg"
+"label" = "orange"
 "punctuation" = "light-gray"
 "punctuation.delimiter" = "light-gray"
-"punctuation.bracket" = "white"
+"punctuation.bracket" = "fg"
 "keyword" = "red"
-"keyword.directive" = "aqua"
-"operator" = "orange"
+"keyword.directive" = "magenta"
+"operator" = "yellow"
 "function" = "green"
 "function.builtin" = "blue"
-"function.macro" = "aqua"
+"function.macro" = "magenta"
 "tag" = "yellow"
-"namespace" = "aqua"
-"attribute" = "aqua"
-"constructor" = "yellow"
+"namespace" = "blue"
+"attribute" = "magenta"
+"constructor" = "blue"
 "module" = "blue"
-"special" = "orange"
+"special" = "red"
 
 "markup.heading.marker" = "light-gray"
 "markup.heading.1" = { fg = "red", modifiers = ["bold"] }
@@ -32,7 +32,7 @@
 "markup.heading.3" = { fg = "yellow", modifiers = ["bold"] }
 "markup.heading.4" = { fg = "green", modifiers = ["bold"] }
 "markup.heading.5" = { fg = "blue", modifiers = ["bold"] }
-"markup.heading.6" = { fg = "white", modifiers = ["bold"] }
+"markup.heading.6" = { fg = "fg", modifiers = ["bold"] }
 "markup.list" = "red"
 "markup.bold" = { modifiers = ["bold"] }
 "markup.italic" = { modifiers = ["italic"] }
@@ -45,54 +45,55 @@
 "diff.delta" = "orange"
 "diff.minus" = "red"
 
-"ui.background" = { bg = "black" }
-"ui.background.separator" = "grey0"
-"ui.cursor" = { fg = "black", bg = "white" }
-"ui.cursor.match" = { fg = "orange", bg = "bg_visual_yellow" }
+"ui.background" = { bg = "bg0" }
+"ui.background.separator" = "light-gray"
+"ui.cursor" = { fg = "bg0", bg = "fg" }
+"ui.cursor.match" = { fg = "orange", bg = "diff_yellow" }
 "ui.cursor.insert" = { fg = "black", bg = "light-gray" }
-"ui.cursor.select" = { fg = "black", bg = "blue" }
+"ui.cursor.select" = { fg = "bg0", bg = "blue" }
 "ui.cursorline.primary" = { bg = "bg1" }
 "ui.cursorline.secondary" = { bg = "bg1" }
-"ui.selection" = { bg = "bg3" }
-"ui.linenr" = "grey0"
-"ui.linenr.selected" = "white"
-"ui.statusline" = { fg = "white", bg = "bg3" }
-"ui.statusline.inactive" = { fg = "grey0", bg = "bg1" }
-"ui.statusline.normal" = { fg = "black", bg = "white", modifiers = ["bold"] }
-"ui.statusline.insert" = { fg = "black", bg = "yellow", modifiers = ["bold"] }
-"ui.statusline.select" = { fg = "black", bg = "blue", modifiers = ["bold"] }
-"ui.bufferline" = { fg = "grey0", bg = "bg1" }
-"ui.bufferline.active" = { fg = "white", bg = "bg3", modifiers = ["bold"] }
+"ui.selection" = { bg = "bg4" }
+"ui.linenr" = "light-gray"
+"ui.linenr.selected" = "fg"
+"ui.statusline" = { fg = "fg", bg = "bg3" }
+"ui.statusline.inactive" = { fg = "light-gray", bg = "bg1" }
+"ui.statusline.normal" = { fg = "bg0", bg = "fg", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "bg0", bg = "yellow", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "bg0", bg = "blue", modifiers = ["bold"] }
+"ui.bufferline" = { fg = "light-gray", bg = "bg1" }
+"ui.bufferline.active" = { fg = "fg", bg = "bg4", modifiers = ["bold"] }
 "ui.popup" = { fg = "light-gray", bg = "bg2" }
-"ui.window" = { fg = "grey0", bg = "black" }
-"ui.help" = { fg = "white", bg = "bg2" }
-"ui.text" = "white"
-"ui.text.focus" = "white"
-"ui.menu" = { fg = "white", bg = "bg3" }
-"ui.menu.selected" = { fg = "black", bg = "blue", modifiers = ["bold"]  }
+"ui.window" = { fg = "light-gray", bg = "bg0" }
+"ui.help" = { fg = "fg", bg = "bg2" }
+"ui.text" = "fg"
+"ui.text.focus" = "green"
+"ui.menu" = { fg = "fg", bg = "bg3" }
+"ui.menu.selected" = { fg = "bg0", bg = "green" }
 "ui.virtual.whitespace" = { fg = "bg4" }
 "ui.virtual.indent-guide" = { fg = "bg4" }
-"ui.virtual.ruler" = { bg = "bg3" }
+"ui.virtual.ruler" = { bg = "bg2" }
 
 "hint" = "blue"
-"info" = "aqua"
+"info" = "green"
 "warning" = "yellow"
 "error" = "red"
-"diagnostic" = { underline = { style = "curl" } }
+"diagnostic" = { underlined = { style = "line" } }
 "diagnostic.hint" = { underline = { color = "blue", style = "dotted" } }
-"diagnostic.info" = { underline = { color = "aqua", style = "dotted" } }
+"diagnostic.info" = { underline = { color = "green", style = "dotted" } }
 "diagnostic.warning" = { underline = { color = "yellow", style = "curl" } }
 "diagnostic.error" = { underline = { color = "red", style = "curl" } }
 # Palette Definitions
 [palette]
 black   =         "#0b0910"
-red     =         "#cd255d"
-green   =         "#5dcd25"
-yellow  =         "#cd9525"
-blue    =         "#255dcd"
-magenta =         "#9525cd"
-cyan    =         "#25cd95"
-orchid    =         "#cd25b1"
+red     =         "#de4779"
+green   =         "#79de47"
+yellow  =         "#deac47"
+blue    =         "#4779de"
+magenta =         "#ac47de"
+cyan    =         "#47deac"
+orchid    =       "#de47c5"
+orange    =       "#de7947"
 gray    =         "#7d7986"
 light-gray   =    "#b1afb6"
 light-red     =   "#de4779"
@@ -101,6 +102,12 @@ light-yellow  =   "#deac47"
 light-blue    =   "#4779de"
 light-magenta =   "#ac47de"
 light-cyan    =   "#47deac"
-light-orchid = "#de47c5"
+light-orchid =    "#de47c5"
 white   =         "#ffffff"
 old-green = "#68228B"
+bg0 = "#0b0910"
+bg1 = "#373049"
+bg2 = "#3b344e"
+bg3 = "#423a58"
+bg4 = "#473e5f"
+fg = "#ffffff"

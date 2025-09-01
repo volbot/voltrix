@@ -14,8 +14,8 @@ while getopts :v flag; do
 done
 shift "$((OPTIND - 1))"
 
-COLORS=( "red" "green" "yellow" "blue" "magenta" "cyan" "orchid" )
-HUES=( 340 100 40 220 280 160 310 )
+COLORS=( "red" "green" "yellow" "blue" "magenta" "cyan" "orchid" "orange" )
+HUES=( 340 100 40 220 280 160 310 20 )
 
 BLACK_HUE=257
 WHITE_HUE=257
@@ -47,6 +47,13 @@ write () {
     echo "        \"dark\": \"$(pastel format hex hsl\(${BLACK_HUE},\ 28.0%,\ 5.0%\))\","
     echo "        \"normal\": \"$(pastel format hex hsl\(${BLACK_HUE},\ 28.0%,\ 15.0%\))\","
     echo "        \"bright\": \"$(pastel format hex hsl\(${BLACK_HUE},\ 28.0%,\ 25.0%\))\""
+    echo "    },"
+    echo "    \"bg\": {"
+    echo "        \"zero\": \"$(pastel format hex hsl\(${BLACK_HUE},\ 28.0%,\ 5.0%\))\","
+    echo "        \"one\": \"$(pastel format hex hsl\(${BLACK_HUE},\ 20.7%,\ 23.7%\))\","
+    echo "        \"two\": \"$(pastel format hex hsl\(${BLACK_HUE},\ 20.4%,\ 25.5%\))\","
+    echo "        \"three\": \"$(pastel format hex hsl\(${BLACK_HUE},\ 20.4%,\ 28.6%\))\","
+    echo "        \"four\": \"$(pastel format hex hsl\(${BLACK_HUE},\ 20.9%,\ 30.8%\))\""
     echo "    },"
     echo "    \"white\": {"
     echo "        \"dark\": \"$(pastel format hex hsl\(${WHITE_HUE},\ 5.0%,\ 50.0%\))\","

@@ -41,9 +41,18 @@ CYAN_BRIG=$( jq -r ."cyan"."bright" < "$INPUT_FILE" )
 ORCHID_DARK=$( jq -r ."orchid"."dark" < "$INPUT_FILE" )
 ORCHID_NORM=$( jq -r ."orchid"."normal" < "$INPUT_FILE" )
 ORCHID_BRIG=$( jq -r ."orchid"."bright" < "$INPUT_FILE" )
+ORANGE_DARK=$( jq -r ."orange"."dark" < "$INPUT_FILE" )
+ORANGE_NORM=$( jq -r ."orange"."normal" < "$INPUT_FILE" )
+ORANGE_BRIG=$( jq -r ."orange"."bright" < "$INPUT_FILE" )
 WHITE_DARK=$( jq -r ."white"."dark" < "$INPUT_FILE" )
 WHITE_NORM=$( jq -r ."white"."normal" < "$INPUT_FILE" )
 WHITE_BRIG=$( jq -r ."white"."bright" < "$INPUT_FILE" )
+
+BG0=$( jq -r ."bg"."zero" < "$INPUT_FILE" )
+BG1=$( jq -r ."bg"."one" < "$INPUT_FILE" )
+BG2=$( jq -r ."bg"."two" < "$INPUT_FILE" )
+BG3=$( jq -r ."bg"."three" < "$INPUT_FILE" )
+BG4=$( jq -r ."bg"."four" < "$INPUT_FILE" )
 
 mkdir -p "$BUILD_DIR"
 
@@ -66,7 +75,7 @@ make () {
             write() {
                 echo "# hardcoded fg and bg" 
                 echo "foreground ${WHITE_BRIG}"
-                echo "background ${BLACK_DARK}"
+                echo "background ${BG0}"
 
                 echo "# black"
                 echo "color0  ${BLACK_DARK}"
@@ -128,7 +137,7 @@ make () {
             echo "white   = '${WHITE_BRIG}'"
 
             echo "[colors.primary] #default"
-            echo "background = '${BLACK_DARK}'"
+            echo "background = '${BG0}'"
             echo "foreground = '${WHITE_BRIG}'"
 
             echo "[colors.cursor]"
@@ -147,13 +156,14 @@ make () {
             echo "# Palette Definitions"
             echo "[palette]"
             echo "black   =         \"${BLACK_DARK}\""
-            echo "red     =         \"${RED_NORM}\""
-            echo "green   =         \"${GREEN_NORM}\""
-            echo "yellow  =         \"${YELLOW_NORM}\""
-            echo "blue    =         \"${BLUE_NORM}\""
-            echo "magenta =         \"${MAGENTA_NORM}\""
-            echo "cyan    =         \"${CYAN_NORM}\""
-            echo "orchid    =         \"${ORCHID_NORM}\""
+            echo "red     =         \"${RED_BRIG}\""
+            echo "green   =         \"${GREEN_BRIG}\""
+            echo "yellow  =         \"${YELLOW_BRIG}\""
+            echo "blue    =         \"${BLUE_BRIG}\""
+            echo "magenta =         \"${MAGENTA_BRIG}\""
+            echo "cyan    =         \"${CYAN_BRIG}\""
+            echo "orchid    =       \"${ORCHID_BRIG}\""
+            echo "orange    =       \"${ORANGE_BRIG}\""
             echo "gray    =         \"${WHITE_DARK}\""
             echo "light-gray   =    \"${WHITE_NORM}\""
             echo "light-red     =   \"${RED_BRIG}\""
@@ -162,9 +172,17 @@ make () {
             echo "light-blue    =   \"${BLUE_BRIG}\""
             echo "light-magenta =   \"${MAGENTA_BRIG}\""
             echo "light-cyan    =   \"${CYAN_BRIG}\""
-            echo "light-orchid = \"${ORCHID_BRIG}\""
+            echo "light-orchid =    \"${ORCHID_BRIG}\""
             echo "white   =         \"${WHITE_BRIG}\""
             echo "old-green = \"#68228B\""
+
+            echo "bg0 = \"${BG0}\""
+            echo "bg1 = \"${BG1}\""
+            echo "bg2 = \"${BG2}\""
+            echo "bg3 = \"${BG3}\""
+            echo "bg4 = \"${BG4}\""
+
+            echo "fg = \"${WHITE_BRIG}\""
         }
     ;;
 "nvim")
@@ -175,12 +193,12 @@ make () {
         echo "local generated = {} "
         echo " generated.palette = { "
         echo "     dark0_hard = \"${BLACK_DARK}\", "
-        echo "     dark0 = \"${BLACK_NORM}\", "
+        echo "     dark0 = \"${BG0}\", "
         echo "     dark0_soft = \"${BLACK_BRIG}\", "
-        echo "     dark1 = \"#3c3836\", "
-        echo "     dark2 = \"#504945\", "
-        echo "     dark3 = \"#665c54\", "
-        echo "     dark4 = \"#7c6f64\", "
+        echo "     dark1 = \"${BG1}\", "
+        echo "     dark2 = \"${BG2}\", "
+        echo "     dark3 = \"${BG3}\", "
+        echo "     dark4 = \"${BG4}\", "
         echo "     light0_hard = \"#f9f5d7\", "
         echo "     light0 = \"#fbf1c7\", "
         echo "     light0_soft = \"#f2e5bc\", "

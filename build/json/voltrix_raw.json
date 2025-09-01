@@ -34,10 +34,22 @@
         "normal": "#cd25b1",
         "bright": "#de47c5"
     },
+    "orange": {
+        "dark": "#a2491d",
+        "normal": "#cd5d25",
+        "bright": "#de7947"
+    },
     "black": {
         "dark": "#0b0910",
         "normal": "#221c31",
         "bright": "#382e52"
+    },
+    "bg": {
+        "zero": "#0b0910",
+        "one": "#373049",
+        "two": "#3b344e",
+        "three": "#423a58",
+        "four": "#473e5f"
     },
     "white": {
         "dark": "#7d7986",
