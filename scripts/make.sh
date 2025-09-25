@@ -149,42 +149,42 @@ make () {
             echo "text        = '${WHITE_BRIG}'"
         }
     ;;
-    "helix")
-        OUTPUT_FILETYPE="toml"
+"helix")
+    OUTPUT_FILETYPE="toml"
 
-        write() {
-            echo "# Palette Definitions"
-            echo "[palette]"
-            echo "black   =         \"${BLACK_DARK}\""
-            echo "red     =         \"${RED_BRIG}\""
-            echo "green   =         \"${GREEN_BRIG}\""
-            echo "yellow  =         \"${YELLOW_BRIG}\""
-            echo "blue    =         \"${BLUE_BRIG}\""
-            echo "magenta =         \"${MAGENTA_BRIG}\""
-            echo "cyan    =         \"${CYAN_BRIG}\""
-            echo "orchid    =       \"${ORCHID_BRIG}\""
-            echo "orange    =       \"${ORANGE_BRIG}\""
-            echo "gray    =         \"${WHITE_DARK}\""
-            echo "light-gray   =    \"${WHITE_NORM}\""
-            echo "light-red     =   \"${RED_BRIG}\""
-            echo "light-green   =   \"${GREEN_BRIG}\""
-            echo "light-yellow  =   \"${YELLOW_BRIG}\""
-            echo "light-blue    =   \"${BLUE_BRIG}\""
-            echo "light-magenta =   \"${MAGENTA_BRIG}\""
-            echo "light-cyan    =   \"${CYAN_BRIG}\""
-            echo "light-orchid =    \"${ORCHID_BRIG}\""
-            echo "white   =         \"${WHITE_BRIG}\""
-            echo "old-green = \"#68228B\""
+    write() {
+        echo "# Palette Definitions"
+        echo "[palette]"
+        echo "black   =         \"${BLACK_DARK}\""
+        echo "red     =         \"${RED_BRIG}\""
+        echo "green   =         \"${GREEN_BRIG}\""
+        echo "yellow  =         \"${YELLOW_BRIG}\""
+        echo "blue    =         \"${BLUE_BRIG}\""
+        echo "magenta =         \"${MAGENTA_BRIG}\""
+        echo "cyan    =         \"${CYAN_BRIG}\""
+        echo "orchid    =       \"${ORCHID_BRIG}\""
+        echo "orange    =       \"${ORANGE_BRIG}\""
+        echo "gray    =         \"${WHITE_DARK}\""
+        echo "light-gray   =    \"${WHITE_NORM}\""
+        echo "light-red     =   \"${RED_BRIG}\""
+        echo "light-green   =   \"${GREEN_BRIG}\""
+        echo "light-yellow  =   \"${YELLOW_BRIG}\""
+        echo "light-blue    =   \"${BLUE_BRIG}\""
+        echo "light-magenta =   \"${MAGENTA_BRIG}\""
+        echo "light-cyan    =   \"${CYAN_BRIG}\""
+        echo "light-orchid =    \"${ORCHID_BRIG}\""
+        echo "white   =         \"${WHITE_BRIG}\""
+        echo "old-green = \"#68228B\""
 
-            echo "bg0 = \"${BG0}\""
-            echo "bg1 = \"${BG1}\""
-            echo "bg2 = \"${BG2}\""
-            echo "bg3 = \"${BG3}\""
-            echo "bg4 = \"${BG4}\""
+        echo "bg0 = \"${BG0}\""
+        echo "bg1 = \"${BG1}\""
+        echo "bg2 = \"${BG2}\""
+        echo "bg3 = \"${BG3}\""
+        echo "bg4 = \"${BG4}\""
 
-            echo "fg = \"${WHITE_BRIG}\""
-        }
-    ;;
+        echo "fg = \"${WHITE_BRIG}\""
+    }
+;;
 "nvim")
     OUTPUT_FILETYPE="lua"
     OUTPUT_TITLE_APPEND="_generated"
@@ -376,6 +376,33 @@ make () {
         echo "; }}}"
     }
 ;;
+"base16")
+    OUTPUT_FILETYPE="yaml"
+
+    write () {
+        echo "system: \"base16\""
+        echo "name: \"voltrix\""
+        echo "author: \"allomyrina volbot (http://volbot.org)\""
+        echo "variant: \"dark\""
+        echo "palette:"
+        echo "base00: \"${BLACK_NORM}\""
+        echo "base01: \"${RED_NORM}\""
+        echo "base02: \"${GREEN_NORM}\""
+        echo "base03: \"${YELLOW_NORM}\""
+        echo "base04: \"${BLUE_NORM}\""
+        echo "base05: \"${MAGENTA_NORM}\""
+        echo "base06: \"${CYAN_NORM}\""
+        echo "base07: \"${WHITE_NORM}\""
+        echo "base08: \"${WHITE_DARK}\""
+        echo "base09: \"${RED_BRIG}\""
+        echo "base0A: \"${GREEN_BRIG}\""
+        echo "base0B: \"${YELLOW_BRIG}\""
+        echo "base0C: \"${BLUE_BRIG}\""
+        echo "base0D: \"${MAGENTA_BRIG}\""
+        echo "base0E: \"${CYAN_BRIG}\""
+        echo "base0F: \"${WHITE_BRIG}\""
+    }
+;;
 *)
     echo "Unknown argument: $arg"
     return 1
@@ -398,7 +425,7 @@ return 0
 mkdir -p build
 
 ARGS=( "$@" )
-OPTIONS=("kitty" "alacritty" "nvim" "helix")
+OPTIONS=("kitty" "alacritty" "nvim" "helix" "tinted-theming")
 
 if [[ $# -eq 0 || "$ARGS" == *"all"* ]]; then
     ARGS=("${OPTIONS[@]}")

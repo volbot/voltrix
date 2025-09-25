@@ -1,6 +1,6 @@
 .PHONY: all json kitty alacritty nvim vim clean
 
-all: json kitty alacritty nvim vim helix
+all: json kitty alacritty nvim vim helix base16 
 
 nvim: json
 	bash scripts/make.sh 'nvim'
@@ -25,6 +25,9 @@ helix: json
 
 kitty: json
 	bash scripts/make.sh 'kitty'
+
+base16: json
+	bash scripts/make.sh 'base16'
 
 json:
 	bash scripts/write_json.sh
