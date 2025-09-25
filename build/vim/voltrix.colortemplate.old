@@ -1,0 +1,119 @@
+; vim: ft=colortemplate 
+
+; Information {{{
+Full name: voltrix
+Short name: voltrix
+Author: allomyrina volbot <tech@volbot.org>
+Description: a sweet, maximalist colorscheme for Vim
+; }}}
+
+Environments: gui 256 16 8
+Background: dark
+
+; voltrix Color palette {{{
+; Color name         GUI                  Base256           Base16
+Color: black         #221c31        ~                 Black
+Color: pink          #cd255d          ~                 Red
+Color: green         #5dcd25        ~                 Green
+Color: gorod         #cd9525       ~                 Yellow
+Color: blue          #255dcd         ~                 Blue
+Color: orchid        #9525cd      ~                 Magenta
+Color: aqua          #25cd95         ~                 Cyan
+Color: lightgray     #b1afb6        ~                 LightGray
+Color: gray          #7d7986        ~                 DarkGray
+Color: lightpink     #de4779          ~                 LightRed
+Color: lightgreen    #79de47        ~                 LightGreen
+Color: lightgorod    #deac47       ~                 LightYellow
+Color: lightblue     #4779de         ~                 LightBlue
+Color: lightorchid   #ac47de      ~                 LightMagenta
+Color: lightaqua     #47deac         ~                 LightCyan
+Color: white         #ffffff        ~                 White
+Color: truegreen     #009845              ~                 Green
+Color: royalpurple   #68228B              ~                 Magenta
+Color: burntorange   #de6047              ~                 Red
+; }}}
+
+; voltrix Terminal colors {{{
+; Define terminal colors (for immersion)
+Term colors: black pink green gorod blue orchid aqua lightgray gray lightpink lightgreen lightgorod lightblue lightorchid lightaqua white
+; }}}
+
+; voltrix Linked groups {{{
+Boolean           -> Constant
+Character         -> Constant
+Conditional       -> Statement
+CursorLineFold    -> FoldColumn
+Debug             -> Special
+Define            -> PreProc
+Delimiter         -> Special
+EndOfBuffer       -> NonText
+Exception         -> Statement
+Float             -> Number
+Function          -> Identifier
+Include           -> PreProc
+Keyword           -> Statement
+Label             -> Statement
+Macro             -> PreProc
+MessageWindow     -> WarningMsg
+Number            -> Constant
+Operator          -> Statement
+PmenuKind         -> Pmenu
+PmenuKindSel      -> PmenuSel
+PmenuExtra        -> Pmenu
+PmenuExtraSel     -> PmenuSel
+PopupNotification -> WarningMsg
+PopupSelected     -> PmenuSel
+PreCondit         -> PreProc
+QuickFixLine      -> Search
+Repeat            -> Statement
+SpecialChar       -> Special
+SpecialComment    -> Special
+StorageClass      -> Type
+String            -> Constant
+Structure         -> Type
+Tag               -> Special
+Typedef           -> Type
+lCursor           -> Cursor
+; }}}
+
+; voltrix Highlight groups {{{
+Normal               white               none
+Terminal             white               none
+CursorLine           omit                black
+StatusLineTerm       white               royalpurple       bold
+StatusLineTermNC     lightgray           truegreen         bold
+; Group              Foreground          Background        Attributes
+; vim specific
+ColorColumn          omit                black
+Cursor               fg                  truegreen
+CursorColumn         omit                black
+CursorLineNr         omit                black             bold
+FoldColumn           none                black
+Folded               white               gray 
+IncSearch            white               royalpurple
+LineNr               gorod               none              bold
+Search               white               truegreen
+Visual               fg                  royalpurple
+StatusLine           white               royalpurple       bold
+StatusLineNC         lightgray           gray              bold
+ToolbarLine          white               black
+ToolbarButton        white               truegreen         bold
+SignColumn           none                gray
+; version control integration
+DiffAdd              gray                green             bold
+DiffChange           gray                pink              bold
+DiffDelete           gray                burntorange       bold
+DiffText             white               aqua              reverse
+; general syntax highlights
+Comment              aqua                none
+Constant             orchid              none
+Error                lightgray           burntorange
+Identifier           pink                none              
+Ignore               black               none
+PreProc              blue                none
+Special              pink                none              bold
+Statement            gorod               none              
+/gui		     omit		 omit		   bold
+Type                 green               none              bold
+Underlined           blue                none              underline
+; }}}
