@@ -13,7 +13,7 @@ let g:colors_name = 'voltrix'
 let s:t_Co = has('gui_running') ? 16777216 : str2nr(&t_Co)
 let s:tgc = has('termguicolors') && &termguicolors
 
-let g:terminal_ansi_colors = ['#221c31', '#de4779', '#79de47', '#deac47', '#4779de', '#ac47de', '#47deac', '#b1afb6', '#7d7986', '#ee6a96', '#96ee6a', '#eec26a', '#6a96ee', '#c26aee', '#6aeec2', '#ffffff']
+let g:terminal_ansi_colors = ['#221c31', '#de4779', '#79de47', '#deac47', '#4779de', '#ac47de', '#47deac', '#b1afb6', '#7d7986', '#e67299', '#99e672', '#e6bf72', '#7299e6', '#bf72e6', '#72e6bf', '#ffffff']
 
 hi! link Boolean Constant
 hi! link Character Constant

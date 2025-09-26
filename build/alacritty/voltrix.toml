@@ -11,12 +11,12 @@ white   = '#b1afb6'
 # Bright colors
 [colors.bright]
 black   = '#7d7986'
-red     = '#ee6a96'
-green   = '#96ee6a'
-yellow  = '#eec26a'
-blue    = '#6a96ee'
-magenta = '#c26aee'
-cyan    = '#6aeec2'
+red     = '#e67299'
+green   = '#99e672'
+yellow  = '#e6bf72'
+blue    = '#7299e6'
+magenta = '#bf72e6'
+cyan    = '#72e6bf'
 white   = '#ffffff'
 [colors.primary] #default
 background = '#0b0910'

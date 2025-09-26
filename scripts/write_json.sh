@@ -39,7 +39,7 @@ write () {
         echo "    \"${COLORS[${i}]}\": {"
         echo "        \"dark\": \"$(pastel format hex hsl\(${HUES[${i}]},\ 69.6%,\ 47.5%\))\","
         echo "        \"normal\": \"$(pastel format hex hsl\(${HUES[${i}]},\ 69.6%,\ 57.5%\))\","
-        echo "        \"bright\": \"$(pastel format hex hsl\(${HUES[${i}]},\ 79.6%,\ 67.5%\))\""
+        echo "        \"bright\": \"$(pastel format hex hsl\(${HUES[${i}]},\ 69.6%,\ 67.5%\))\""
         echo "    },"
     done
     echo "    \"black\": {"
