@@ -1,43 +1,43 @@
 {
     "red": {
-        "dark": "#a21d49",
-        "normal": "#cd255d",
-        "bright": "#de4779"
+        "dark": "#cd255d",
+        "normal": "#de4779",
+        "bright": "#ee6a96"
     },
     "green": {
-        "dark": "#49a21d",
-        "normal": "#5dcd25",
-        "bright": "#79de47"
+        "dark": "#5dcd25",
+        "normal": "#79de47",
+        "bright": "#96ee6a"
     },
     "yellow": {
-        "dark": "#a2761d",
-        "normal": "#cd9525",
-        "bright": "#deac47"
+        "dark": "#cd9525",
+        "normal": "#deac47",
+        "bright": "#eec26a"
     },
     "blue": {
-        "dark": "#1d49a2",
-        "normal": "#255dcd",
-        "bright": "#4779de"
+        "dark": "#255dcd",
+        "normal": "#4779de",
+        "bright": "#6a96ee"
     },
     "magenta": {
-        "dark": "#761da2",
-        "normal": "#9525cd",
-        "bright": "#ac47de"
+        "dark": "#9525cd",
+        "normal": "#ac47de",
+        "bright": "#c26aee"
     },
     "cyan": {
-        "dark": "#1da276",
-        "normal": "#25cd95",
-        "bright": "#47deac"
+        "dark": "#25cd95",
+        "normal": "#47deac",
+        "bright": "#6aeec2"
     },
     "orchid": {
-        "dark": "#a21d8c",
-        "normal": "#cd25b1",
-        "bright": "#de47c5"
+        "dark": "#cd25b1",
+        "normal": "#de47c5",
+        "bright": "#ee6ad8"
     },
     "orange": {
-        "dark": "#a2491d",
-        "normal": "#cd5d25",
-        "bright": "#de7947"
+        "dark": "#cd5d25",
+        "normal": "#de7947",
+        "bright": "#ee966a"
     },
     "black": {
         "dark": "#0b0910",
