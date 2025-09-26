@@ -385,7 +385,7 @@ make () {
         echo "author: \"allomyrina volbot (http://volbot.org)\""
         echo "variant: \"dark\""
         echo "palette:"
-        echo "  base00: \"${BLACK_dark}\""
+        echo "  base00: \"${BLACK_DARK}\""
         echo "  base01: \"${RED_NORM}\""
         echo "  base02: \"${GREEN_NORM}\""
         echo "  base03: \"${YELLOW_NORM}\""
