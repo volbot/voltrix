@@ -396,9 +396,9 @@ make () {
         echo "  base08: \"${MAGENTA_BRIG}\""
         echo "  base09: \"${BLUE_BRIG}\""
         echo "  base0A: \"${ORCHID_BRIG}\""
-        echo "  base0B: \"${CYAN_BRIG}\""
+        echo "  base0B: \"${GREEN_BRIG}\""
         echo "  base0C: \"${RED_BRIG}\""
-        echo "  base0D: \"${GREEN_BRIG}\""
+        echo "  base0D: \"${CYAN_BRIG}\""
         echo "  base0E: \"${YELLOW_BRIG}\""
         echo "  base0F: \"${ORCHID_BRIG}\""
     }
