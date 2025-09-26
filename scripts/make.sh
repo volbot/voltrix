@@ -403,6 +403,24 @@ make () {
         echo "  base0F: \"${RED_BRIG}\""
     }
 ;;
+"fish")
+    OUTPUT_FILETYPE="fish"
+    write () {
+        echo "\
+function voltrix                
+    set -g black   '${BG0:1}'              
+    set -g white   '${WHITE_BRIG:1}'       
+    set -g dgray   '${BLACK_BRIG:1}'       
+    set -g lgray   '${WHITE_NORM:1}'       
+    set -g red     '${RED_BRIG:1}'           
+    set -g green   '${GREEN_BRIG:1}'       
+    set -g blue    '${BLUE_BRIG:1}'         
+    set -g yellow  '${YELLOW_BRIG:1}'     
+    set -g magenta '${MAGENTA_BRIG:1}'   
+    set -g cyan    '${CYAN_BRIG:1}'         
+end"
+    }
+;;
 *)
     echo "Unknown argument: $arg"
     return 1
@@ -425,7 +443,7 @@ return 0
 mkdir -p build
 
 ARGS=( "$@" )
-OPTIONS=("kitty" "alacritty" "nvim" "helix" "tinted-theming")
+OPTIONS=("kitty" "alacritty" "nvim" "helix" "base16" "fish")
 
 if [[ $# -eq 0 || "$ARGS" == *"all"* ]]; then
     ARGS=("${OPTIONS[@]}")

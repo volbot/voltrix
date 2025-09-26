@@ -1,10 +1,14 @@
 .PHONY: all json kitty alacritty nvim vim clean
 
-all: json kitty alacritty nvim vim helix base16 
+all: json kitty alacritty nvim vim helix base16 fish
 
 nvim: json
 	bash scripts/make.sh 'nvim'
 	cp build/nvim/voltrix_generated.lua voltrix.nvim/lua/voltrix_generated.lua
+
+fish: json
+	bash scripts/make.sh 'fish'
+	cp build/fish/voltrix.fish ~/.config/fish/functions/
 
 # building for vim requires vim-devel
 vim: json
