@@ -390,7 +390,7 @@ make () {
         echo "  base02: \"${BG2}\""
         echo "  base03: \"${BG3}\""
         echo "  base04: \"${WHITE_DARK}\""
-        echo "  base05: \"${WHITE_NORM}\""
+        echo "  base05: \"${WHITE_BRIG}\""
         echo "  base06: \"${WHITE_BRIG}\""
         echo "  base07: \"${BG4}\""
         echo "  base08: \"${MAGENTA_BRIG}\""
