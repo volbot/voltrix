@@ -1,34 +1,43 @@
 .PHONY: all json kitty alacritty nvim vim clean
 
-all: json kitty alacritty nvim vim helix base16 fish
+TINTED_BUILDER_RUST_SHA256 = 51a68e43b86192bf081f99bf3c1798d9e346d5dd016d76f31ea75a58585d9386
+TINTED_BUILDER_RUST_FILE = ./lib/tinted-builder-rust/tinted-builder-rust.tar.gz
+TINTED_BUILDER_RUST_CMD = ./lib/tinted-builder-rust/tinted-builder-rust -s ./build/base16 build out
 
-nvim: json
-	bash scripts/make.sh 'nvim'
-	cp build/nvim/voltrix_generated.lua voltrix.nvim/lua/voltrix_generated.lua
+SHA256_CMD = sha256sum
+
+all: vim nvim terminals fish
 
 fish: json
 	bash scripts/make.sh 'fish'
 	cp build/fish/voltrix.fish ~/.config/fish/functions/
 
-# building for vim requires vim-devel
-vim: json
-	bash scripts/make.sh 'vim'
-	vim --not-a-term -N -u NONE -n --cmd ':source scripts/make.vim' >/dev/null 2>&1
-	cp build/vim/voltrix.colortemplate voltrix.vim/templates/voltrix.colortemplate
-	cp -r build/vim/colors voltrix.vim
+vim: base16 deps 
+	if [ ! -d ./tinted-vim ]; then \
+		git clone https://github.com/tinted-theming/tinted-vim ;\
+	fi
+	mkdir -p ./out/templates
+	cp ./tinted-vim/templates/* ./out/templates
+	$(TINTED_BUILDER_RUST_CMD)
+	rm ./out/templates/*
 
-alacritty: json
-	bash scripts/make.sh 'alacritty'
+nvim: base16 deps 
+	if [ ! -d ./tinted-nvim ]; then \
+		git clone https://github.com/tinted-theming/tinted-nvim ;\
+	fi
+	mkdir -p ./out/templates
+	cp ./tinted-nvim/templates/* ./out/templates
+	$(TINTED_BUILDER_RUST_CMD)
+	rm ./out/templates/*
 
-helix: json
-	bash scripts/make.sh 'helix'
-	mv build/helix/voltrix.toml build/helix/voltrix_generated.toml
-	cat schemes/helix/scheme.toml > build/helix/voltrix.toml
-	cat build/helix/voltrix_generated.toml >> build/helix/voltrix.toml
-	cp build/helix/voltrix.toml ~/.config/helix/themes/voltrix.toml
-
-kitty: base16 
-	base16-builder --scheme ./build/base16/voltrix.yaml -t kitty -b dark
+terminals: base16 deps 
+	if [ ! -d ./tinted-terminal ]; then \
+		git clone https://github.com/tinted-theming/tinted-terminal ;\
+	fi
+	mkdir -p ./out/templates
+	cp ./tinted-terminal/templates/* ./out/templates
+	$(TINTED_BUILDER_RUST_CMD)
+	rm ./out/templates/*
 
 base16: json
 	bash scripts/make.sh 'base16'
@@ -36,5 +45,18 @@ base16: json
 json:
 	bash scripts/write_json.sh
 
+deps: tinted_builder_rust
+
+tinted_builder_rust: 
+	mkdir -p ./lib/tinted-builder-rust
+	wget -O "$(TINTED_BUILDER_RUST_FILE)" https://github.com/tinted-theming/tinted-builder-rust/releases/download/v0.13.2/tinted-builder-rust-x86_64-unknown-linux-gnu.tar.gz
+	CALCULATED_SHA256=`$(SHA256_CMD) $(TINTED_BUILDER_RUST_FILE)`; \
+	case "$$CALCULATED_SHA256 " in \
+		($(TINTED_BUILDER_RUST_SHA256)\ *) : ok ;; \
+		(*) echo invalid checksum for "$(TINTED_BUILDER_RUST_FILE)", expected=\"$(TINTED_BUILDER_RUST_SHA256)\" actual=\"$$CALCULATED_SHA256\"; \
+		exit 1 ;; \
+	esac
+	tar xf ./lib/tinted-builder-rust/tinted-builder-rust.tar.gz -C ./lib/tinted-builder-rust
+
 clean:
-	rm -rf build
+	rm -rf ./lib ./out ./tinted-terminal ./tinted-nvim ./tinted-vim
