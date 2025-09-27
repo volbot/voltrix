@@ -6,7 +6,7 @@ TINTED_BUILDER_RUST_CMD = ./lib/tinted-builder-rust/tinted-builder-rust -s ./bui
 
 SHA256_CMD = sha256sum
 
-all: vim nvim terminals fish
+all: base16 vim nvim terminals fish
 
 fish: json
 	bash scripts/make.sh 'fish'
