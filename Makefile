@@ -27,8 +27,8 @@ helix: json
 	cat build/helix/voltrix_generated.toml >> build/helix/voltrix.toml
 	cp build/helix/voltrix.toml ~/.config/helix/themes/voltrix.toml
 
-kitty: json
-	bash scripts/make.sh 'kitty'
+kitty: base16 
+	base16-builder --scheme ./build/base16/voltrix.yaml -t kitty -b dark
 
 base16: json
 	bash scripts/make.sh 'base16'
