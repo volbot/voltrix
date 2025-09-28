@@ -57,7 +57,7 @@ write () {
     echo "    },"
     echo "    \"white\": {"
     echo "        \"dark\": \"$(pastel format hex hsl\(${WHITE_HUE},\ 15.0%,\ 60.0%\))\","
-    echo "        \"normal\": \"$(pastel format hex hsl\(${WHITE_HUE},\ 10.0%,\ 75.0%\))\","
+    echo "        \"normal\": \"$(pastel format hex hsl\(${WHITE_HUE},\ 7.5%,\ 70.0%\))\","
     echo "        \"bright\": \"$(pastel format hex hsl\(${WHITE_HUE},\ 5.0%,\ 99.9%\))\""
     echo "    }"
     echo "}"
