@@ -60,3 +60,6 @@ tinted_builder_rust:
 
 clean:
 	rm -rf ./lib ./out ./tinted-terminal ./tinted-nvim ./tinted-vim
+
+delete:
+	rm -rf build
