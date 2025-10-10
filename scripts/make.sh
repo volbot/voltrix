@@ -393,14 +393,14 @@ make () {
         echo "  base05: \"${WHITE_BRIG}\""
         echo "  base06: \"${WHITE_BRIG}\""
         echo "  base07: \"${BG4}\""
-        echo "  base08: \"${CYAN_BRIG}\""
-        echo "  base09: \"${MAGENTA_BRIG}\""
-        echo "  base0A: \"${ORCHID_BRIG}\""
-        echo "  base0B: \"${BLUE_BRIG}\""
-        echo "  base0C: \"${RED_BRIG}\""
-        echo "  base0D: \"${GREEN_BRIG}\""
-        echo "  base0E: \"${YELLOW_BRIG}\""
-        echo "  base0F: \"${RED_BRIG}\""
+        echo "  base08: \"${CYAN_NORM}\""
+        echo "  base09: \"${MAGENTA_NORM}\""
+        echo "  base0A: \"${ORCHID_NORM}\""
+        echo "  base0B: \"${BLUE_NORM}\""
+        echo "  base0C: \"${RED_NORM}\""
+        echo "  base0D: \"${GREEN_NORM}\""
+        echo "  base0E: \"${YELLOW_NORM}\""
+        echo "  base0F: \"${RED_NORM}\""
     }
 ;;
 "fish")
@@ -412,12 +412,12 @@ function voltrix
     set -g white   '${WHITE_BRIG:1}'       
     set -g dgray   '${BLACK_BRIG:1}'       
     set -g lgray   '${WHITE_NORM:1}'       
-    set -g red     '${RED_BRIG:1}'           
-    set -g green   '${GREEN_BRIG:1}'       
-    set -g blue    '${BLUE_BRIG:1}'         
-    set -g yellow  '${YELLOW_BRIG:1}'     
-    set -g magenta '${MAGENTA_BRIG:1}'   
-    set -g cyan    '${CYAN_BRIG:1}'         
+    set -g red     '${RED_NORM:1}'           
+    set -g green   '${GREEN_NORM:1}'       
+    set -g blue    '${BLUE_NORM:1}'         
+    set -g yellow  '${YELLOW_NORM:1}'     
+    set -g magenta '${MAGENTA_NORM:1}'   
+    set -g cyan    '${CYAN_NORM:1}'         
 end"
     }
 ;;
