@@ -93,13 +93,13 @@ Windows Registry Editor Version 5.00
 
 ; ANSI Cyan
 ; 36m
-; base0C #de4779
-"Colour18"="222,71,121"
+; base0C #47deac
+"Colour18"="71,222,172"
 
 ; ANSI Cyan Bright
 ; 1;36m
-; base0C #de4779
-"Colour19"="222,71,121"
+; base0C #47deac
+"Colour19"="71,222,172"
 
 ; ANSI White
 ; 37m

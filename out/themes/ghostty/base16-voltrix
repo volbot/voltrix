@@ -11,7 +11,7 @@ palette = 2=#4779de
 palette = 3=#de47c5
 palette = 4=#79de47
 palette = 5=#deac47
-palette = 6=#de4779
+palette = 6=#47deac
 palette = 7=#ffffff
 palette = 8=#3b344e
 palette = 9=#de4779
@@ -19,10 +19,10 @@ palette = 10=#4779de
 palette = 11=#de47c5
 palette = 12=#79de47
 palette = 13=#deac47
-palette = 14=#de4779
+palette = 14=#47deac
 palette = 15=#473e5f
 palette = 16=#ac47de
-palette = 17=#47deac
+palette = 17=#de4779
 palette = 18=#373049
 palette = 19=#3b344e
 palette = 20=#928aa8
