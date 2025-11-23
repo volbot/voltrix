@@ -397,10 +397,10 @@ make () {
         echo "  base09: \"${MAGENTA_NORM}\""
         echo "  base0A: \"${ORCHID_NORM}\""
         echo "  base0B: \"${BLUE_NORM}\""
-        echo "  base0C: \"${CYAN_NORM}\""
+        echo "  base0C: \"${RED_NORM}\""
         echo "  base0D: \"${GREEN_NORM}\""
         echo "  base0E: \"${YELLOW_NORM}\""
-        echo "  base0F: \"${RED_NORM}\""
+        echo "  base0F: \"${CYAN_NORM}\""
     }
 ;;
 "fish")
