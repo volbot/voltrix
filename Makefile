@@ -10,7 +10,7 @@ all: base16 vim nvim terminals fish
 
 fish: json
 	bash scripts/make.sh 'fish'
-	cp build/fish/voltrix.fish ~/.config/fish/functions/
+	#cp build/fish/voltrix.fish ~/.config/fish/functions/
 
 vim: base16 deps 
 	if [ ! -d ./tinted-vim ]; then \

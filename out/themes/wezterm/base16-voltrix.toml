@@ -1,0 +1,43 @@
+# base16 voltrix
+# Scheme author: allomyrina volbot (http://volbot.org)
+# Template author: Tinted Theming (https://github.com/tinted-theming/tinted-termihal)
+
+[colors]
+background = "#0b0910"
+foreground = "#ffffff"
+
+cursor_bg = "#ffffff"
+cursor_border = "#ffffff"
+cursor_fg = "#0b0910"
+
+selection_bg = "#ffffff"
+selection_fg = "#3b344e"
+
+ansi = [
+  "#0b0910",
+  "#de4779",
+  "#4779de",
+  "#de47c5",
+  "#79de47",
+  "#deac47",
+  "#de4779",
+  "#ffffff"
+]
+brights = [
+  "#3b344e",
+  "#de4779",
+  "#4779de",
+  "#de47c5",
+  "#79de47",
+  "#deac47",
+  "#de4779",
+  "#473e5f"
+]
+
+[colors.indexed]
+16 = "#ac47de"
+17 = "#47deac"
+18 = "#373049"
+19 = "#3b344e"
+20 = "#928aa8"
+21 = "#ffffff"
