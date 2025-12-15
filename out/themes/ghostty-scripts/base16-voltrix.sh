@@ -20,7 +20,7 @@ EOF
 }
 
 
-ghostty_palette_color_0="#0b0910"
+ghostty_palette_color_0="#090910"
 ghostty_palette_color_1="#de4779"
 ghostty_palette_color_2="#4779de"
 ghostty_palette_color_3="#de47c5"
@@ -28,19 +28,19 @@ ghostty_palette_color_4="#79de47"
 ghostty_palette_color_5="#deac47"
 ghostty_palette_color_6="#de4779"
 ghostty_palette_color_7="#ffffff"
-ghostty_palette_color_8="#3b344e"
+ghostty_palette_color_8="#3e3e5f"
 ghostty_palette_color_9="#de4779"
 ghostty_palette_color_10="#4779de"
 ghostty_palette_color_11="#de47c5"
 ghostty_palette_color_12="#79de47"
 ghostty_palette_color_13="#deac47"
 ghostty_palette_color_14="#de4779"
-ghostty_palette_color_15="#473e5f"
+ghostty_palette_color_15="#3e3e5f"
 ghostty_palette_color_16="#ac47de"
 ghostty_palette_color_17="#47deac"
-ghostty_palette_color_18="#373049"
-ghostty_palette_color_19="#3b344e"
-ghostty_palette_color_20="#928aa8"
+ghostty_palette_color_18="#303049"
+ghostty_palette_color_19="#3e3e5f"
+ghostty_palette_color_20="#8a8aa8"
 ghostty_palette_color_21="#ffffff"
 
 _theme_file() {

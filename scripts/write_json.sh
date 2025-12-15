@@ -17,8 +17,8 @@ shift "$((OPTIND - 1))"
 COLORS=( "red" "green" "yellow" "blue" "magenta" "cyan" "orchid" "orange" )
 HUES=( 340 100 40 220 280 160 310 20 )
 
-BLACK_HUE=257
-WHITE_HUE=257
+BLACK_HUE=240
+WHITE_HUE=240
 
 mkdir -p "$BUILD_DIR"
 

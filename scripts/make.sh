@@ -387,7 +387,7 @@ make () {
         echo "palette:"
         echo "  base00: \"${BG0}\""
         echo "  base01: \"${BG1}\""
-        echo "  base02: \"${BG2}\""
+        echo "  base02: \"${BG4}\""
         echo "  base03: \"${WHITE_NORM}\""
         echo "  base04: \"${WHITE_DARK}\""
         echo "  base05: \"${WHITE_BRIG}\""

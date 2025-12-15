@@ -4,7 +4,7 @@
 [Scheme]
 Name=base16-voltrix
 ColorForeground=#ffffff
-ColorBackground=#0b0910
+ColorBackground=#090910
 ColorCursor=x
 ColorBoldIsBright=FALSE
-ColorPalette=#373049;#de4779;#4779de;#de47c5;#79de47;#deac47;#de4779;#ffffff;#3b344e;#de4779;#4779de;#de47c5;#79de47;#deac47;#de4779;#473e5f
+ColorPalette=#303049;#de4779;#4779de;#de47c5;#79de47;#deac47;#de4779;#ffffff;#3e3e5f;#de4779;#4779de;#de47c5;#79de47;#deac47;#de4779;#3e3e5f

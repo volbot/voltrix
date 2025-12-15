@@ -2,16 +2,16 @@
 # Color scheme: voltrix by allomyrina volbot (http://volbot.org)
 
 [colors]
-selection-background = '#3b344e' # base02
+selection-background = '#3e3e5f' # base02
 selection-foreground = '#ffffff' # base05
 
 cursor         = '#ffffff' # base05
-tabs           = '#373049' # base01
-tabs-active    = '#3b344e' # base02
+tabs           = '#303049' # base01
+tabs-active    = '#3e3e5f' # base02
 
-background     = '#0b0910' # base00
+background     = '#090910' # base00
 foreground     = '#ffffff' # base05
-black          = '#373049' # base01
+black          = '#303049' # base01
 red            = '#de4779' # base08
 yellow         = '#de47c5' # base0A
 green          = '#4779de' # base0B
@@ -21,21 +21,21 @@ magenta        = '#deac47' # base0E
 white          = '#ffffff' # base06
 
 dim-foreground   = '#ffffff' # base05
-dim-black        = '#373049' # base01
+dim-black        = '#303049' # base01
 dim-red          = '#de4779' # base08
 dim-yellow       = '#de47c5' # base0A
 dim-green        = '#4779de' # base0B
 dim-cyan         = '#de4779' # base0C
 dim-blue         = '#79de47' # base0D
 dim-magenta      = '#deac47' # base0E
-dim-white        = '#928aa8' # base04
+dim-white        = '#8a8aa8' # base04
 
 light-foreground = '#ffffff' # base05
-light-black      = '#3b344e' # base02
+light-black      = '#3e3e5f' # base02
 light-red        = '#de4779' # base08
 light-yellow     = '#de47c5' # base0A
 light-green      = '#4779de' # base0B
 light-cyan       = '#de4779' # base0C
 light-blue       = '#79de47' # base0D
 light-magenta    = '#deac47' # base0E
-light-white      = '#473e5f' # base07
+light-white      = '#3e3e5f' # base07
