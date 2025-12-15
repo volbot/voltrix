@@ -3,7 +3,7 @@
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 BUILD_DIR="./build"
 OUTPUT_TITLE="voltrix"
-OUTPUT_TITLE_APPEND=""
+
 
 ANSI_16=()
 
@@ -392,7 +392,7 @@ make () {
         echo "  base04: \"${WHITE_DARK}\""
         echo "  base05: \"${WHITE_BRIG}\""
         echo "  base06: \"${WHITE_BRIG}\""
-        echo "  base07: \"${RED_DARK}\""
+        echo "  base07: \"${BG4}\""
         echo "  base08: \"${RED_NORM}\"" #cyan used to be here but it messed up error messages
         echo "  base09: \"${MAGENTA_NORM}\""
         echo "  base0A: \"${ORCHID_NORM}\""

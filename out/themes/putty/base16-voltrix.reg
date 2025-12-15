@@ -108,5 +108,5 @@ Windows Registry Editor Version 5.00
 
 ; ANSI White Bright
 ; 1;37m
-; base07 cd255d
-"Colour21"="205,37,93"
+; base07 3e3e5f
+"Colour21"="62,62,95"
