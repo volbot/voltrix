@@ -40,20 +40,20 @@
         "bright": "#e69972"
     },
     "black": {
-        "dark": "#0b0910",
-        "normal": "#221c31",
-        "bright": "#382e52"
+        "dark": "#090910",
+        "normal": "#1c1c31",
+        "bright": "#2e2e52"
     },
     "bg": {
-        "zero": "#0b0910",
-        "one": "#373049",
-        "two": "#3b344e",
-        "three": "#423a58",
-        "four": "#473e5f"
+        "zero": "#090910",
+        "one": "#303049",
+        "two": "#34344e",
+        "three": "#3a3a58",
+        "four": "#3e3e5f"
     },
     "white": {
-        "dark": "#928aa8",
-        "normal": "#b0adb8",
+        "dark": "#8a8aa8",
+        "normal": "#adadb8",
         "bright": "#ffffff"
     }
 }
